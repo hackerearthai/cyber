@@ -49,20 +49,20 @@ export default function Navbar() {
           </div>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#475569]">
-          <a href="#features" className="hover:text-[#0f172a] transition-colors">
-            Features
-          </a>
-          <a href="#how-it-works" className="hover:text-[#0f172a] transition-colors">
-            How It Works
-          </a>
-          <a href="#trust" className="hover:text-[#0f172a] transition-colors">
-            Why Us
-          </a>
-          <a href="#footer" className="hover:text-[#0f172a] transition-colors">
-            About
-          </a>
-        </div>
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#475569]">
+            <a href="#features" className="hover:text-[#0f172a] transition-colors">
+              Features
+            </a>
+            <a href="#scanner" className="hover:text-[#0f172a] transition-colors">
+              Scanner
+            </a>
+            <a href="#how-it-works" className="hover:text-[#0f172a] transition-colors">
+              How It Works
+            </a>
+            <a href="#trust" className="hover:text-[#0f172a] transition-colors">
+              Why Us
+            </a>
+          </div>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
@@ -90,10 +90,10 @@ export default function Navbar() {
         {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden bg-[#f7f4ef] border-t border-[#ddd8cf] px-6 py-4 flex flex-col gap-4 text-sm font-medium text-[#475569]">
-            <a href="#features" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">Features</a>
-            <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">How It Works</a>
-            <a href="#trust" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">Why Us</a>
-            <a href="#footer" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">About</a>
+              <a href="#features" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">Features</a>
+              <a href="#scanner" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">Scanner</a>
+              <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">How It Works</a>
+              <a href="#trust" onClick={() => setMenuOpen(false)} className="hover:text-[#0f172a]">Why Us</a>
             <ChromeButton
               source="navbar-mobile"
               variant="nav"
