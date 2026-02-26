@@ -45,16 +45,13 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">Product</h4>
             <ul className="space-y-3 text-sm">
               {[
-                { label: "Features",    href: "#features"  },
-                { label: "How It Works",href: "#how-it-works" },
-                { label: "Terms & Conditions", href: "/terms" },
-                { label: "Privacy Policy",     href: "/privacy" },
+                { label: "Features",           href: "#features"    },
+                { label: "How It Works",       href: "#how-it-works" },
+                { label: "Terms & Conditions", href: "/terms"        },
+                { label: "Privacy Policy",     href: "/privacy"      },
               ].map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="text-[#64748b] hover:text-[#94a3b8] transition-colors"
-                  >
+                  <a href={item.href} className="text-[#64748b] hover:text-[#94a3b8] transition-colors">
                     {item.label}
                   </a>
                 </li>
@@ -67,15 +64,27 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">The Team</h4>
             <div className="space-y-3">
               {[
-                { name: "Minaal Naik",      initials: "MN", color: "bg-[#1e3a5f]" },
-                { name: "Mohammed Arshad",  initials: "MA", color: "bg-[#0ea5e9]" },
-                { name: "Navaneet Mathad",  initials: "NM", color: "bg-[#8b5cf6]" },
+                { name: "Minaal Naik",     initials: "MN", color: "bg-[#1e3a5f]",linkedin: "https://www.linkedin.com/in/minaal-naik-813304374" },
+                { name: "Mohammed Arshad", initials: "MA", color: "bg-[#0ea5e9]", linkedin: "https://www.linkedin.com/in/mohammed-arshad-b19887288" },
+                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]", linkedin: "" },
               ].map((member) => (
                 <div key={member.name} className="flex items-center gap-3">
                   <div className={`w-8 h-8 rounded-full ${member.color} flex items-center justify-center text-white text-xs font-bold flex-shrink-0`}>
                     {member.initials}
                   </div>
-                  <div className="text-[#94a3b8] text-xs font-semibold">{member.name}</div>
+                  <div className="text-[#94a3b8] text-xs font-semibold flex-1">{member.name}</div>
+                  {/* LinkedIn icon */}
+                  <a
+                    href={member.linkedin || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${member.name} LinkedIn`}
+                    className="w-6 h-6 rounded bg-white/5 flex items-center justify-center hover:bg-[#0ea5e9]/20 transition-colors flex-shrink-0"
+                  >
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#94a3b8">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                  </a>
                 </div>
               ))}
             </div>
