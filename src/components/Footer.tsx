@@ -4,6 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         {/* Top grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
@@ -25,7 +26,6 @@ export default function Footer() {
               fake websites. Free forever.
             </p>
             <div className="flex gap-3">
-              {/* GitHub */}
               <a
                 href="https://github.com/hackerearthai/cyber.git"
                 target="_blank"
@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">Product</h4>
             <ul className="space-y-3 text-sm">
               {[
-                { label: "Features",           href: "#features"    },
+                { label: "Features",           href: "#features"     },
                 { label: "How It Works",       href: "#how-it-works" },
                 { label: "Terms & Conditions", href: "/terms"        },
                 { label: "Privacy Policy",     href: "/privacy"      },
@@ -64,16 +64,15 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">The Team</h4>
             <div className="space-y-3">
               {[
-                { name: "Minaal Naik",     initials: "MN", color: "bg-[#1e3a5f]",linkedin: "https://www.linkedin.com/in/minaal-naik-813304374" },
-                { name: "Mohammed Arshad", initials: "MA", color: "bg-[#0ea5e9]", linkedin: "https://www.linkedin.com/in/mohammed-arshad-b19887288" },
-                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]", linkedin: "" },
+                { name: "Minaal Naik",     initials: "MN", color: "bg-[#1e3a5f]", linkedin: "https://www.linkedin.com/in/minaal-naik-813304374" },
+                { name: "Mohammed Arshad", initials: "MA", color: "bg-[#0ea5e9]",  linkedin: "https://www.linkedin.com/in/mohammed-arshad-b19887288" },
+                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]",  linkedin: "" },
               ].map((member) => (
                 <div key={member.name} className="flex items-center gap-3">
                   <div className={`w-8 h-8 rounded-full ${member.color} flex items-center justify-center text-white text-xs font-bold flex-shrink-0`}>
                     {member.initials}
                   </div>
                   <div className="text-[#94a3b8] text-xs font-semibold flex-1">{member.name}</div>
-                  {/* LinkedIn icon */}
                   <a
                     href={member.linkedin || "#"}
                     target="_blank"
@@ -88,22 +87,8 @@ export default function Footer() {
                 </div>
               ))}
             </div>
-
-            {/* Newsletter */}
-            <div className="mt-6">
-              <p className="text-[#64748b] text-xs mb-3">Get threat intelligence updates:</p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="you@email.com"
-                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-xs text-white placeholder:text-[#475569] outline-none focus:border-[#0ea5e9]/50 transition-colors min-w-0"
-                />
-                <button className="bg-[#0ea5e9] text-white text-xs font-bold px-3 py-2 rounded-lg hover:bg-[#0284c7] transition-colors flex-shrink-0">
-                  Join
-                </button>
-              </div>
-            </div>
           </div>
+
         </div>
 
         {/* Bottom bar */}
@@ -117,6 +102,7 @@ export default function Footer() {
             <a href="#"        className="hover:text-[#94a3b8] transition-colors">Security Disclosure</a>
           </div>
         </div>
+
       </div>
     </footer>
   );
