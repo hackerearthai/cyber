@@ -1,40 +1,6 @@
 "use client";
 import ChromeButton from "@/components/ChromeButton";
 
-const stats = [
-  { value: "2.4M+", label: "Threats Blocked", sublabel: "since launch" },
-  { value: "99.2%", label: "Detection Accuracy", sublabel: "on benchmark set" },
-  { value: "< 80ms", label: "Analysis Speed", sublabel: "per page load" },
-  { value: "180K+", label: "Active Users", sublabel: "and growing daily" },
-];
-
-const testimonials = [
-  {
-    quote:
-      "Mailed It caught a PayPal spoof that my IT team missed. The real-time alert popped up before I could even type my password. Genuinely impressive.",
-    name: "Marcus T.",
-    role: "Senior Engineer, FinTech startup",
-    avatar: "MT",
-    avatarBg: "bg-[#1e3a5f]",
-  },
-  {
-    quote:
-      "We rolled Mailed It out to our entire remote team after a phishing incident. In the first month, it flagged 14 threats. It paid for itself immediately.",
-    name: "Sarah K.",
-    role: "IT Security Manager",
-    avatar: "SK",
-    avatarBg: "bg-[#0ea5e9]",
-  },
-  {
-    quote:
-      "The email scanning is what got me. It flagged a fake Microsoft Teams invite that looked completely legitimate. Clean UI, zero performance hit.",
-    name: "James R.",
-    role: "Product Manager, SaaS company",
-    avatar: "JR",
-    avatarBg: "bg-[#8b5cf6]",
-  },
-];
-
 const badges = [
   {
     icon: (
