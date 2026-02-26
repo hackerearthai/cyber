@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "AI-powered Chrome extension that detects phishing emails, malicious links, and fake websites in real time. Mailed It keeps you safe, automatically.",
   verification: {
-    google: "oTAlh4zwX8tYHqDad6vQA_N9ShpXfXkWY_FYdx_oVx8",
+    google: "duQnfMnmy0kR6YdCBFFyrm7e6ow5BjGirUvqsevGo_A",
   },
 };
 
