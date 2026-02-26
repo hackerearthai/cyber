@@ -6,20 +6,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="lg:col-span-1">
-              <div className="flex items-center gap-2.5 mb-4">
-                <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-[#1e3a5f] to-[#0ea5e9] flex items-center justify-center shadow-md shadow-[#0ea5e9]/20">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <rect x="2" y="5" width="20" height="14" rx="2.5" fill="white" fillOpacity="0.15" stroke="white" strokeWidth="1.5"/>
-                    <path d="M2 8l8.5 5.5a3 3 0 0 0 3 0L22 8" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-                    <circle cx="17.5" cy="16.5" r="4" fill="#0ea5e9" stroke="white" strokeWidth="1.2"/>
-                    <path d="M15.5 16.5l1.2 1.2 2.1-2.2" stroke="white" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div className="flex items-baseline gap-0.5">
-                  <span className="font-extrabold text-white text-[1.15rem] tracking-tight leading-none">Mailed</span>
-                  <span className="font-extrabold text-[#0ea5e9] text-[1.15rem] tracking-tight leading-none">It</span>
-                </div>
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-[#1e3a5f] to-[#0ea5e9] flex items-center justify-center shadow-md shadow-[#0ea5e9]/20">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="5" width="20" height="14" rx="2.5" fill="white" fillOpacity="0.15" stroke="white" strokeWidth="1.5"/>
+                  <path d="M2 8l8.5 5.5a3 3 0 0 0 3 0L22 8" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="17.5" cy="16.5" r="4" fill="#0ea5e9" stroke="white" strokeWidth="1.2"/>
+                  <path d="M15.5 16.5l1.2 1.2 2.1-2.2" stroke="white" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
+              <div className="flex items-baseline gap-0.5">
+                <span className="font-extrabold text-white text-[1.15rem] tracking-tight leading-none">Mailed</span>
+                <span className="font-extrabold text-[#0ea5e9] text-[1.15rem] tracking-tight leading-none">It</span>
+              </div>
+            </div>
             <p className="text-[#64748b] text-sm leading-relaxed mb-5">
               AI-powered browser protection against phishing, malicious links, and
               fake websites. Free forever.
@@ -30,7 +30,7 @@ export default function Footer() {
                 href="https://github.com/hackerearthai/cyber.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/5"
+                className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="GitHub"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="#94a3b8">
@@ -44,10 +44,19 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold text-sm mb-4">Product</h4>
             <ul className="space-y-3 text-sm">
-              {["Features", "How It Works", "About Us", "Roadmap"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-[#64748b] hover:text-[#94a3b8] transition-colors">
-                    {item}
+              {[
+                { label: "Features",    href: "#features"  },
+                { label: "How It Works",href: "#how-it-works" },
+                { label: "About Us",    href: "#footer"    },
+                { label: "Terms & Conditions", href: "/terms" },
+                { label: "Privacy Policy",     href: "/privacy" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="text-[#64748b] hover:text-[#94a3b8] transition-colors"
+                  >
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -59,18 +68,15 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">The Team</h4>
             <div className="space-y-3">
               {[
-                { name: "Minaal Naik", initials: "MN", color: "bg-[#1e3a5f]" },
-                { name: "Mohammed Arshad", initials: "MA", color: "bg-[#0ea5e9]" },
-                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]" },
+                { name: "Minaal Naik",      initials: "MN", color: "bg-[#1e3a5f]" },
+                { name: "Mohammed Arshad",  initials: "MA", color: "bg-[#0ea5e9]" },
+                { name: "Navaneet Mathad",  initials: "NM", color: "bg-[#8b5cf6]" },
               ].map((member) => (
                 <div key={member.name} className="flex items-center gap-3">
                   <div className={`w-8 h-8 rounded-full ${member.color} flex items-center justify-center text-white text-xs font-bold flex-shrink-0`}>
                     {member.initials}
                   </div>
-                  <div>
-                    <div className="text-[#94a3b8] text-xs font-semibold">{member.name}</div>
-                    <div className="text-[#475569] text-[10px]">{member.role}</div>
-                  </div>
+                  <div className="text-[#94a3b8] text-xs font-semibold">{member.name}</div>
                 </div>
               ))}
             </div>
@@ -95,12 +101,12 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[#475569] text-xs">
-              © {new Date().getFullYear()} Mailed It. All rights reserved. Built to protect people, not profit from fear.
+            © {new Date().getFullYear()} Mailed It. All rights reserved. Built to protect people, not profit from fear.
           </p>
           <div className="flex gap-6 text-xs text-[#475569]">
-            <a href="#" className="hover:text-[#94a3b8] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#94a3b8] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[#94a3b8] transition-colors">Security Disclosure</a>
+            <a href="/privacy" className="hover:text-[#94a3b8] transition-colors">Privacy Policy</a>
+            <a href="/terms"   className="hover:text-[#94a3b8] transition-colors">Terms of Service</a>
+            <a href="#"        className="hover:text-[#94a3b8] transition-colors">Security Disclosure</a>
           </div>
         </div>
       </div>
