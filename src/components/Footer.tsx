@@ -47,7 +47,6 @@ export default function Footer() {
               {[
                 { label: "Features",    href: "#features"  },
                 { label: "How It Works",href: "#how-it-works" },
-                { label: "About Us",    href: "#footer"    },
                 { label: "Terms & Conditions", href: "/terms" },
                 { label: "Privacy Policy",     href: "/privacy" },
               ].map((item) => (
