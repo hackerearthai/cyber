@@ -18,13 +18,16 @@ export const metadata: Metadata = {
   title: "Mailed It — Catch Phishing Before It Catches You",
   description:
     "AI-powered Chrome extension that detects phishing emails, malicious links, and fake websites in real time. Mailed It keeps you safe, automatically.",
+  verification: {
+    google: "oTAlh4zwX8tYHqDad6vQA_N9ShpXfXkWY_FYdx_oVx8",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
