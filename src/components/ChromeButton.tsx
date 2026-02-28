@@ -84,6 +84,7 @@ function defaultContent(variant: string) {
       return (
         <span className="flex items-center gap-1.5">
           Add to Chrome
+          <span className="text-xs font-normal opacity-70">(Extension will be live soon)</span>
         </span>
       );
 
