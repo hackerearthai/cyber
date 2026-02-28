@@ -66,7 +66,7 @@ export default function Footer() {
               {[
                 { name: "Minaal Naik",     initials: "MN", color: "bg-[#1e3a5f]", linkedin: "https://www.linkedin.com/in/minaal-naik-813304374" },
                 { name: "Mohammed Arshad", initials: "MA", color: "bg-[#0ea5e9]",  linkedin: "https://www.linkedin.com/in/mohammed-arshad-b19887288" },
-                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]",  linkedin: "" },
+                { name: "Navaneet Mathad", initials: "NM", color: "bg-[#8b5cf6]",  linkedin: "https://www.linkedin.com/in/navaneet-mathad-ba8292228" },
               ].map((member) => (
                 <div key={member.name} className="flex items-center gap-3">
                   <div className={`w-8 h-8 rounded-full ${member.color} flex items-center justify-center text-white text-xs font-bold flex-shrink-0`}>
