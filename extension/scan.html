@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mailedit Scan</title>
+<style>
+body { font-family: Arial, sans-serif; width: 480px; margin: 0; padding: 10px; background: #f4f4f9; }
+h2 { text-align: center; color: #2c3e50; }
+#results { margin-top: 10px; max-height: 600px; overflow-y: auto; background: #fff; padding: 10px; border-radius: 5px; }
+.email { border-bottom: 1px solid #ddd; padding: 5px 0; }
+.email h4 { margin: 0; color: #2c3e50; }
+.email p { margin: 2px 0; font-size: 12px; }
+.high { color: red; }
+.moderate { color: orange; }
+.low { color: green; }
+</style>
+</head>
+<body>
+<h2>Mailedit Scan Results</h2>
+<div id="status">Loading...</div>
+<button id="cancel-scan-btn" style="display:none; background:#e74c3c; color:#fff; padding:8px; margin-top:5px; border:none; border-radius:4px; cursor:pointer;">Cancel Scan</button>
+<div id="results"></div>
+<script src="scan.js"></script>
+</body>
+</html>

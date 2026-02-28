@@ -1,0 +1,151 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; width: 400px; padding: 10px; background: #f9f9f9; color: #333; }
+h1 { text-align: center; color: #1a73e8; }
+#controls { margin-bottom: 10px; }
+#date-range { margin-top: 5px; display: none; }
+button { padding: 6px 12px; background: #1a73e8; color: white; border: none; cursor: pointer; border-radius: 4px; margin-top: 5px; }
+button:hover { background: #155ab6; }
+#status { margin: 10px 0; font-weight: bold; color: #555; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 6px; border: 1px solid #ddd; text-align: left; font-size: 12px; }
+th { background: #1a73e8; color: white; }
+td button { padding: 2px 6px; background: #e53935; color: white; border: none; border-radius: 3px; cursor: pointer; }
+td button:hover { background: #ab000d; }
+
+/* Link Preview Popup Styles */
+#link-preview-popup {
+    position: fixed;
+    z-index: 999999;
+    background: #1a1a2e;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    display: none;
+    min-width: 220px;
+    pointer-events: none;
+}
+
+.popup-url {
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 6px;
+    word-break: break-all;
+}
+
+.popup-risk {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.popup-stats {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Floating Scanner Widget */
+#mailedit-scanner-widget {
+    position: fixed;
+    right: 5px;
+    top: 15px;
+    z-index: 999998;
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    border: 2px solid #27ae60;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+/* Collapsed state - just the M button */
+#mailedit-scanner-widget.collapsed {
+    padding: 0;
+    min-width: auto;
+    width: 48px;
+    height: 48px;
+}
+
+/* Expanded state */
+#mailedit-scanner-widget.expanded {
+    padding: 12px 16px;
+    min-width: 160px;
+    right: 5px;
+}
+
+.widget-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-toggle:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+#mailedit-scanner-widget.collapsed .widget-toggle {
+    display: flex;
+}
+
+#mailedit-scanner-widget.expanded .widget-toggle {
+    display: none;
+}
+
+.widget-expanded {
+    color: white;
+    font-size: 13px;
+    display: none;
+}
+
+#mailedit-scanner-widget.expanded .widget-expanded {
+    display: block;
+}
+
+.widget-header {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 6px;
+    cursor: grab;
+}
+
+.widget-header:active {
+    cursor: grabbing;
+}
+
+.widget-stop-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.widget-stop-btn:hover {
+    background: #c0392b;
+}
+
+#mailedit-scanner-widget.dragging {
+    opacity: 0.9;
+}
