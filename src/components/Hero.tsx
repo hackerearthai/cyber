@@ -56,7 +56,9 @@ export default function Hero() {
         <div className="reveal reveal-delay-3 flex flex-col sm:flex-row gap-4 mb-16">
           <ChromeButton source="hero" variant="primary" />
           <a
-            href="#how-it-works"
+            href="https://youtu.be/jsT8J_KJJqA"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-white border border-[#ddd8cf] text-[#1e3a5f] font-semibold text-base px-7 py-3.5 rounded-xl hover:bg-[#f7f4ef] hover:border-[#1e3a5f]/30 transition-all duration-200 hover:-translate-y-0.5"
           >
             <svg
