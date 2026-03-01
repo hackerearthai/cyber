@@ -67,7 +67,9 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#how-it-works"
+              href="https://youtu.be/jsT8J_KJJqA"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-[#1e3a5f] hover:text-[#0f172a] transition-colors"
             >
               See Demo
