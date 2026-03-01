@@ -168,9 +168,9 @@ Technology :
 
 Names :
 
-**Minaal Naik** : [Github]()
-**Mohammed Arshad** :  [Github]()
-**Navaneet Mathad** : [Github]()
+**Minaal Naik** : [Github](https://github.com/Torqued-codes)
+**Mohammed Arshad** :  [Github](https://github.com/Mohammad-Arshad-24)
+**Navaneet Mathad** : [Github](https://github.com/navaneet-mathad)
 
 
 ## 📄 Legal
