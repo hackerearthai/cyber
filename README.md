@@ -1,6 +1,6 @@
- #🛡️ Mailed It — Detect Phishing Before It Detects You
+# 🛡️ Mailed It — Detect Phishing Before It Detects You
 
-> AI-powered browser protection against phishing, malicious links, and fake websites. **Free forever.**
+> A browser which protects against phishing, malicious links, and fake websites. **Free forever.**
 
 🌐 **Live Website:** [mailedit.onrender.com](https://mailedit.onrender.com)
 
@@ -42,7 +42,6 @@ Phishing doesn't stand a chance.
   - Nested URLs in parameters
   - Click tracking paths
   - SendGrid redirect abuse
-  - And many more...
   - Get a **threat score out of 100** with a visual riskometer
   - See exactly which checks passed and which failed
   - Filter results by threats found vs safe checks
@@ -53,12 +52,22 @@ Phishing doesn't stand a chance.
 
 ### 🧩 Chrome Extension Features
 
+<img width="545" height="329" alt="image" src="https://github.com/user-attachments/assets/36fe5deb-fd0d-4275-b563-7f2b051b226d" />
+
 #### 🖱️ Link Hover Scanner
 
 - Hover over any URL on any webpage
 - The extension instantly shows whether the link is **safe or malicious**
 - Non-intrusive popup with threat score and risk indicators
 - No clicking required — protection happens on hover
+
+#### Malicious URL:
+<img width="1018" height="243" alt="image" src="https://github.com/user-attachments/assets/83fdc5c3-4c9d-4483-afe4-f25ca49b3488" />
+
+
+#### Safe URL:
+<img width="899" height="356" alt="image" src="https://github.com/user-attachments/assets/0f6be71a-b3ce-433f-8ea2-5e24be37e544" />
+
 
 #### 📧 Phishing Email Detection
 
@@ -67,6 +76,14 @@ Phishing doesn't stand a chance.
 - Flags suspicious sender patterns, spoofed domains, and deceptive subject lines
 - If a phishing email is detected, the extension **moves it directly to trash** — preventing you from ever interacting with it
 - All actions (move to trash / restore) require **user confirmation**
+
+<img width="540" height="432" alt="image" src="https://github.com/user-attachments/assets/c7bcc97d-9f79-4018-8413-3d246867f58f" />
+<img width="595" height="683" alt="image" src="https://github.com/user-attachments/assets/00f389b2-9725-4901-8d42-78096f0f5476" />
+<img width="558" height="534" alt="image" src="https://github.com/user-attachments/assets/372a4ac4-0087-4679-aad4-0f36ec75faa7" />
+<img width="593" height="185" alt="image" src="https://github.com/user-attachments/assets/c788e58e-1f48-49b6-a7fe-d47968569d7a" />
+<img width="269" height="128" alt="image" src="https://github.com/user-attachments/assets/21450622-bbc6-4cc8-90b6-292fbc54536a" />
+
+
 
 #### 🌐 Real-Time Website Protection
 
@@ -128,6 +145,9 @@ Phishing doesn't stand a chance.
 ### Chrome Extension
 > ⚠️ Extension coming soon to the Chrome Web Store
 
+<img width="1716" height="816" alt="image" src="https://github.com/user-attachments/assets/e991a47c-ac07-4dcb-8483-a4cd74347792" />
+
+
 1. Click **Add to Chrome** on the website
 2. The extension activates automatically — no setup needed
 3. Browse normally — Mailed It works silently in the background
@@ -135,22 +155,22 @@ Phishing doesn't stand a chance.
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
+Technology :
 
-| Frontend | Next.js 15, React, TypeScript |
-| Styling | Tailwind CSS |
-| Deployment | Render |
-| Extension | Chrome Manifest V3, JavaScript |
-| Email Integration | Gmail API (OAuth 2.0) |
+- Frontend : Next.js 15, React, TypeScript
+- Styling : Tailwind CSS
+- Deployment : Render
+- Extension : Chrome Manifest V3, JavaScript 
+- Email Integration : Gmail API (OAuth 2.0)
 
 
 ## 👥 The Team
 
-| Name | Role |
+Names :
 
-| **Minaal Naik** | [LinkedIn](https://www.linkedin.com/in/minaal-naik-813304374) |
-| **Mohammed Arshad** | [LinkedIn](https://www.linkedin.com/in/mohammed-arshad-b19887288) |
-| **Navaneet Mathad** | — |
+**Minaal Naik** : [Github]()
+**Mohammed Arshad** :  [Github]()
+**Navaneet Mathad** : [Github]()
 
 
 ## 📄 Legal
