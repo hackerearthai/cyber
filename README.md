@@ -143,13 +143,11 @@ Phishing doesn't stand a chance.
 
 
 ### Chrome Extension
-> ⚠️ Extension coming soon to the Chrome Web Store
 
-<img width="1716" height="816" alt="image" src="https://github.com/user-attachments/assets/e991a47c-ac07-4dcb-8483-a4cd74347792" />
-
-
-1. Click **Add to Chrome** on the website
+1. Click **Add to Chrome** on the website.
+  
 2. The extension activates automatically — no setup needed
+   
 3. Browse normally — Mailed It works silently in the background
 
 
